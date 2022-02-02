@@ -620,7 +620,7 @@ const runTests = async () => {
     return execCommand(customCommand, true, 'run tests')
   }
 
-  const commandPrefix = core.getInput('command-prefix')
+  const commandPrefix = core.getInput('command-prefix') || '--'
   if (commandPrefix) {
     return runTestsUsingCommandLine()
   }
