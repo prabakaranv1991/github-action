@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "16.11.24",
-    "@zeit/ncc": "0.22.3",
+    "@vercel/ncc": "0.33.1",
     "husky": "7.0.4",
     "markdown-link-check": "3.9.3",
     "prettier": "2.5.1",
