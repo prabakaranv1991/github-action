@@ -26,7 +26,7 @@ jobs:
           working-directory: examples/chrome
 
       # store screenshot captured during the test
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: screenshots-in-electron
           path: examples/chrome/cypress/screenshots
@@ -40,12 +40,12 @@ jobs:
           working-directory: examples/chrome
           browser: chrome
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: screenshots-in-chrome
           path: examples/chrome/cypress/screenshots
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: video-in-chrome
           path: examples/chrome/cypress/videos
@@ -65,12 +65,12 @@ jobs:
           browser: chrome
           headless: true
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: screenshots-in-headless-chrome
           path: examples/chrome/cypress/screenshots
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: video-in-headless-chrome
           path: examples/chrome/cypress/videos
